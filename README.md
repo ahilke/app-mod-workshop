@@ -29,3 +29,9 @@ To configure the project:
 docker build -t my-php-app-docker .   
 docker run -it -p 8080:8080 my-php-app-docker
 ```
+
+# Deployment
+
+```
+gcloud run deploy app-mod-workshop --source=. --region=europe-west3 --allow-unauthenticated 
+```
