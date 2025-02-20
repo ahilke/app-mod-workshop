@@ -2,5 +2,7 @@ options:
   logging: CLOUD_LOGGING_ONLY
 
 steps:
+  - name: debug
+    script: ls -la
   - name: deploy
     script: gcloud run deploy app-mod-workshop --source=. --region=europe-west3 --allow-unauthenticated 
